@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ### libmateweather 1.29.0
 
   * Bump version for development
@@ -9,6 +10,14 @@
   * timezone: declare 'tzdir' as 'const char'
 
 ### libmateweather 1.27.1
+=======
+### libmateweather 1.26.3
+
+  * Translations update
+  * The url with 'www.' is a permanent redirect (308) to the url without it
+
+### libmateweather 1.26.2
+>>>>>>> 674f9ad (release 1.26.3)
 
   * Translations update
   * fix some location names

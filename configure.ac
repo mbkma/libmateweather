@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 AC_INIT([libmateweather], [1.29.0], [https://mate-desktop.org])
 AC_PREREQ(2.60)
+=======
+AC_INIT([libmateweather], [1.26.3], [https://mate-desktop.org])
+AC_PREREQ(2.59)
+>>>>>>> 674f9ad (release 1.26.3)
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_MACRO_DIR([m4])
