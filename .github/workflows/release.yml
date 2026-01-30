@@ -17,8 +17,10 @@ jobs:
 
       - name: Build the source code
         run: .github/workflows/builds.sh autotools
+      - name: Create SHA256 checksum
+        run: sha256sum libmateweather-*.tar.xz > libmateweather-*.tar.xz.sha256sum
       - name: Create github release
         run: |
-          gh release create ${{ github.ref_name }} --title ${{ github.ref_name }} --generate-notes libmateweather-*.tar.xz
+          gh release create ${{ github.ref_name }} --title ${{ github.ref_name }} --generate-notes libmateweather-*.tar.xz libmateweather-*.tar.xz.sha256sum
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
